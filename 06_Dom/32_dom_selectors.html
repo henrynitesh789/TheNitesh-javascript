@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>DOM</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="title" class ="heading">
+            Dom learning
+            <span style=>
+                test text
+            </span>
+        </h1>
+        <h2>
+            Lorem ipsum dolor sit amet.
+        </h2>
+        <h3>
+            Lorem ipsum dolor sit amet.
+        </h3>
+        <h4>
+            Lorem ipsum dolor sit amet.
+        </h4>
+        <p>Lorem ipsum dolor sit amet conse.</p>
+        <input type="password" name="" id="">
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+<!-- JAVASCRIPT CONSOLE COMMAND 
+
+    document.getElementById('title')
+    document.getElementById('title').id
+    document.getElementById('title').className
+    document.getElementById('title').getAttribute('id')
+    document.getElementById('title').getAttribute('class',test)
+    document.getElementById('title').getAttribute('class','test heading')
+
+    const title = document.getElementById('title').id
+    title.style.backgroundcolor = 'green'
+    title.style.padding = "15px"
+    title.style.borderRadius = "15px"
+
+    title.textContent   // all content
+    title.innerHTML     // show all html along with tag
+    title.innerText     // actual text which is visible
+
+    document.getElementsByClassName('heading')
+    document.querySelector('h1')    // give first h1 on page
+    document.querySelector('#title')
+    document.querySelector('.heading')
+    document.querySelector('input[type="password"]')
+    document.querySelector('p:first-child')
+
+    document.querySelector('ul')
+    const myul = document.querySelector('ul')
+    myul.querySelector('li')
+    const myList = myul.querySelector('li')
+    myList.style.backgroundcolor = "green"
+    myList.style.padding = "10px"
+
+    myList.innerText = "five"
+
+    document.querySelectorAll('li')
+    const tempList =  document.querySelectorAll('li')
+
+    const arr = [1,2,3,4]
+    tempList[0].style.color = "green"
+
+    const myh1 = document.querySelectorAll('h1')
+    myh1[0].style.color = "green"
+
+    tempList.forEach( function (l) {
+        l.style.backgroundcolor = "green"
+    })
+
+    // converting node list in to array
+    document.getElementByClassName('list-item')
+    const tempClass = document.getElementByClassName('list-item')
+    tempClass.forEach(function(li){
+        console.log(li)
+    })
+
+    Array.from(tempClass)
+    const myconvertedArray = Array.from(tempClass) 
+    myconvertedArray.forEach(function(li){
+        li.style.color = "orange"
+    })
+
+    document.querySelectorAll('h2')
+    const fff = document.querySelectorAll('h2')
+    fff[1].innerText
+-->
